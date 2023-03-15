@@ -12,3 +12,8 @@ target_link_libraries(dbus-server ${SDBUS_LIBRARIES})
 add_executable(dbus-client src/dbus_client.cpp)
 target_link_libraries(dbus-client ${SDBUS_LIBRARIES})
 
+add_executable(dbus-echo src/dbus_echo.cpp)
+target_link_libraries(dbus-echo ${SDBUS_LIBRARIES})
+
+add_executable(dbus-test src/dbus_test.cpp)
+target_link_libraries(dbus-test ${SDBUS_LIBRARIES})
